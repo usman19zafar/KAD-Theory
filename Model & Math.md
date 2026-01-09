@@ -822,102 +822,18 @@ agent
 𝑡
 0
 )
-This measures how much misalignment is added by the agent’s internal change and/or loss of focus, given the same domain 
-𝐷
-𝑡
-1
-.
+This measures how much misalignment is added by the agent’s internal change and/or loss of focus, given the same domain 𝐷𝑡1 .
 
 Now observe:
 
-Δ
-01
-=
-Δ
-domain
-+
-Δ
-agent
+Δ01 = Δdomain + Δ agent
+
 This is just algebraic rearrangement:
 
-Δ
-01
-=
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-1
-)
-−
-Δ
-(
-𝐷
-𝑡
-0
-,
-𝐴
-𝑡
-0
-)
-=
-[
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-1
-)
-−
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-0
-)
-]
-+
-[
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-0
-)
-−
-Δ
-(
-𝐷
-𝑡
-0
-,
-𝐴
-𝑡
-0
-)
-]
-=
-Δ
-agent
-+
-Δ
-domain
+Δ 01 = Δ ( 𝐷𝑡1 , 𝐴𝑡1 ) − Δ ( 𝐷𝑡0 , 𝐴𝑡0) = { Δ( 𝐷𝑡1 , 𝐴𝑡1) − Δ(𝐷𝑡1 , 𝐴𝑡0) } + {Δ (𝐷𝑡1 , 𝐴𝑡0) − Δ (𝐷𝑡0 , 𝐴𝑡0)}
+
+= Δ agent + Δ domain
+
 So the total increase in misalignment is exactly the sum of:
 
 a domain term, and
@@ -925,97 +841,23 @@ a domain term, and
 an agent/focus term.
 
 3.4 Linking agent/focus term to loss of focus
-Now use the focus function 
-𝐹
-.
+
+Now use the focus function 𝐹.
 
 Assume:
 
-When 
-𝐹
-(
-𝐴
-𝑡
-1
-,
-𝐷
-𝑡
-1
-)
-=
-1
-, the agent is optimally tracking the domain, so 
-Δ
-agent
- is minimal.
+When 𝐹(𝐴𝑡1 , 𝐷𝑡1) = 1 , the agent is optimally tracking the domain, so Δ agent is minimal.
 
-When 
-𝐹
-(
-𝐴
-𝑡
-1
-,
-𝐷
-𝑡
-1
-)
-=
-0
+When 𝐹( 𝐴𝑡1 , 𝐷𝑡1 ) = 0
 , the agent is not tracking the domain, which forces 
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-1
-)
->
-𝜃
-, hence 
-Δ
-agent
->
-0
-.
+
+Δ( 𝐷𝑡1 , 𝐴𝑡1 ) > 𝜃, hence Δagent > 0.
 
 Thus:
 
-If 
-𝐹
-(
-𝐴
-𝑡
-1
-,
-𝐷
-𝑡
-1
-)
-=
-0
-, we declare the cause to be loss of focus.
+If 𝐹 (𝐴𝑡1 , 𝐷𝑡1) = 0 , we declare the cause to be loss of focus.
 
-If 
-𝐹
-(
-𝐴
-𝑡
-1
-,
-𝐷
-𝑡
-1
-)
-=
-1
- but 
-Δ
-domain
- is large, the cause is domain change.
+If 𝐹 ( 𝐴𝑡1 , 𝐷𝑡1) = 1 but Δ domain is large, the cause is domain change.
 
 In general, both components can contribute, but every failure decomposes into those two causes.
 
