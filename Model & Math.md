@@ -677,6 +677,7 @@ If focus is lost, alignment is bad:
 )
 >
 𝜃
+
 If focus is present, alignment depends on how well the agent tracks domain changes.
 
 3.2 Decomposition of misalignment over time
