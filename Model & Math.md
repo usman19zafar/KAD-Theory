@@ -5,103 +5,51 @@ Domains:
 
 Let
 
-𝐷
-be the set of all possible domains.
+𝐷 be the set of all possible domains.
 
 Agents:
 
 Let
 
-𝐴
-be the set of all possible agents.
+𝐴 be the set of all possible agents.
 
 World states (reality):
 
 Let
 
-𝑊
-be the set of all possible world states (reality configurations).
+𝑊 be the set of all possible world states (reality configurations).
 
 Time (optional human coordinate):
 
 Let
 
-𝑇
-be a time index set (e.g. 
-𝑅
- or 
-𝑍
-) — but KAD is not fundamentally dependent on it.
+𝑇 be a time index set (e.g. 𝑅 or 𝑍) — but KAD is not fundamentally dependent on it.
 
 1.1 Domain as a function of world (and optionally time)
 Define a domain mapping:
 
-𝐷
-:
-𝑊
-×
-𝑇
-→
-𝐷
+𝐷 : 𝑊 × 𝑇 → 𝐷
 
 Given a world state 
 
-𝑤
-∈
-𝑊
+𝑤 ∈ 𝑊
 
-at “time” 
-
-𝑡
-∈
-𝑇
-
-, the active domain is
+at “time” 𝑡 ∈ 𝑇, the active domain is
 
 𝐷𝑡 = 𝐷 ( 𝑤 , 𝑡 )
 
 If you want to avoid explicit time, you can simply write 
 
-𝐷
-(
-𝑤
-)
- and treat different world states 
-𝑤
-1
-,
-𝑤
-2
- as “before/after” without explicit time.
-
+𝐷 (𝑤) and treat different world states 𝑤1, 𝑤2 as “before/after” without explicit time.
 
 1.2 Agent state and focus
 Let an agent have an internal state:
 
-𝐴
-:
-𝑇
-→
-𝐴
-,
-𝐴
-𝑡
-= 𝐴 ( 𝑡 )
-
+𝐴 : 𝑇 → 𝐴 , 𝐴𝑡 = 𝐴 ( 𝑡 )
 
 Define a focus function:
 
-𝐹
-:
-𝐴
-×
-𝐷
-→
-{
-0
-,
-1
-}
+𝐹 : 𝐴 × 𝐷 → {0 , 1}
 where
 
 𝐹 (𝐴𝑡 , 𝐷𝑡 ) = 1 --> means: the agent is attending to / tracking the current domain.
@@ -133,9 +81,7 @@ where
 𝑃 ( 𝑊 )  is the power set of 𝑊.
 
 For 
-𝐷
-𝑡
-, the visible region of reality is:
+𝐷𝑡 , the visible region of reality is:
 
 𝑉 (𝐷𝑡 ) ⊆ 𝑊
 This formalizes:
@@ -148,15 +94,7 @@ information exists everywhere in
 1.4 Alignment and misalignment
 Define an alignment measure:
 
-Δ
-:
-𝐷
-×
-𝐴
-→
-𝑅
-≥
-0
+Δ : 𝐷 × 𝐴 → 𝑅 ≥ 0
 We interpret:
 
 Δ ( 𝐷𝑡 , 𝐴𝑡 ) = 0 : perfect alignment
@@ -167,24 +105,9 @@ Introduce a failure threshold
 𝜃 > 0 .
 
 Define failure at 
-𝑡
- as:
+𝑡 as:
 
-Fail
-(
-𝑡
-)
-  
-⟺
-  
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-) > 𝜃
+Fail(𝑡) ⟺ Δ(𝐷𝑡 , 𝐴𝑡) > 𝜃
 
 
 This is the core formalization of your signature:
@@ -211,20 +134,7 @@ System success at
 Then the following two statements are equivalent:
 
 The system fails at time 
-𝑡
-.
-
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
->
-𝜃
-.
+𝑡 . Δ(𝐷𝑡 , 𝐴𝑡) > 𝜃.
 
 Proof (hybrid: logical + mathematical)
 Step 1: Define success in terms of alignment.
@@ -239,17 +149,7 @@ Formally, postulate a monotone relationship between alignment and performance:
 
 There exists a function
 
-𝑆
-:
-𝑅
-≥
-0
-→
-{
-0
-,
-1
-}
+𝑆 : 𝑅 ≥ 0 → { 0 , 1 }
 such that:
 
 𝑆 ( 𝑥 ) = 1  means “success”
@@ -265,223 +165,58 @@ Interpretation: as misalignment increases, you cannot go from failure back to su
 Step 2: Introduce the threshold.
 
 Define a threshold 
-𝜃
->
-0
+𝜃 > 0
  such that:
 
 For all 
-𝑥
-≤
-𝜃
-, 
-𝑆
-(
-𝑥
-)
-=
-1
- (success).
+𝑥 ≤ 𝜃, 𝑆 (𝑥) =1 (success).
 
 For all 
-𝑥
->
-𝜃
-, 
-𝑆
-(
-𝑥
-)
-=
-0
- (failure).
+𝑥 > 𝜃, 𝑆(𝑥) = 0 (failure).
 
-This is equivalent to saying success and failure partition the alignment space at 
-𝜃
-.
+This is equivalent to saying success and failure partition the alignment space at 𝜃.
 
 Step 3: Connect 
-Δ
- to success/failure.
+Δ to success/failure.
 
 At a given index 
-𝑡
-:
+𝑡 : The active domain is 𝐷𝑡.
 
-The active domain is 
-𝐷
-𝑡
-.
-
-The agent state is 
-𝐴
-𝑡
-.
+The agent state is 𝐴𝑡.
 
 Misalignment is 
-Δ
-𝑡
-=
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
-.
+Δ𝑡 = Δ(𝐷𝑡, 𝐴𝑡).
 
 Define:
 
 Success
-(
-𝑡
-)
-  
-⟺
-  
-𝑆
-(
-Δ
-𝑡
-)
-=
-1
-Failure
-(
-𝑡
-)
-  
-⟺
-  
-𝑆
-(
-Δ
-𝑡
-)
-=
-0
-By the threshold definition of 
-𝑆
-, this becomes:
+(𝑡) ⟺ 𝑆(Δ𝑡) = 1
+Failure (𝑡) ⟺  
 
-Success
-(
-𝑡
-)
-  
-⟺
-  
-Δ
-𝑡
-≤
-𝜃
-Failure
-(
-𝑡
-)
-  
-⟺
-  
-Δ
-𝑡
->
-𝜃
+𝑆 (Δ𝑡) = 0
+By the threshold definition of 
+
+𝑆, this becomes:
+
+Success (𝑡) ⟺ Δ𝑡 ≤ 𝜃
+Failure (𝑡 ) ⟺ Δ𝑡 > 𝜃
+
 Step 4: Show equivalence.
 
 We need to show:
 
-Failure
-(
-𝑡
-)
-  
-⟺
-  
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
->
-𝜃
+Failure (𝑡) ⟺ Δ (𝐷𝑡 , 𝐴𝑡) > 𝜃
 From Step 3:
 
 By definition,
 
-Failure
-(
-𝑡
-)
-  
-⟺
-  
-𝑆
-(
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
-)
-=
-0
+Failure (𝑡 ) ⟺ 𝑆 (Δ (𝐷𝑡,𝐴𝑡)) = 0
 By the threshold property of 
-𝑆
-,
 
-𝑆
-(
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
-)
-=
-0
-  
-⟺
-  
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
->
-𝜃
+𝑆, 𝑆( Δ ( 𝐷𝑡 , 𝐴𝑡)) = 0 ⟺ Δ (𝐷𝑡,𝐴𝑡) > 𝜃
 Chaining these:
 
-Failure
-(
-𝑡
-)
-  
-⟺
-  
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
->
-𝜃
+Failure (𝑡) ⟺ Δ (𝐷𝑡 , 𝐴𝑡) > 𝜃
 This proves the equivalence.
 
 Interpretation:  
