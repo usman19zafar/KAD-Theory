@@ -1022,86 +1022,39 @@ In general, both components can contribute, but every failure decomposes into th
 3.5 Dual Failure Law (formal statement)
 Assume:
 
-At 
-𝑡
-0
-, the system is successful:
+At 𝑡 0 , the system is successful:
 
-Δ
-(
-𝐷
-𝑡
-0
-,
-𝐴
-𝑡
-0
-)
-≤
-𝜃
-At 
-𝑡
-1
+Δ ( 𝐷𝑡 0 , 𝐴𝑡 0) ≤ 𝜃 At 𝑡1
+
 , the system fails:
 
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-1
-)
->
-𝜃
+Δ ( 𝐷𝑡 1 , 𝐴𝑡 1 ) > 𝜃
+
 Alignment change can be decomposed into 
-Δ
-domain
- and 
-Δ
-agent
- as above.
+Δ domain  and Δ agent as above.
 
 Loss of focus implies misalignment above threshold for the current domain.
 
 Then:
 
-Every failure at 
-𝑡
-1
+Every failure at  𝑡 1
  can be attributed to:
 
-non‑zero domain change component 
-Δ
-domain
->
-0
-, and/or
+non‑zero domain change component  Δ domain > 0 , and/or
 
-non‑zero agent/focus component 
-Δ
-agent
->
-0
+non‑zero agent/focus component Δ agent > 0
 , which corresponds to loss of focus or inadequate adaptation.
 
 This is your Dual Failure Law in formal clothes:
 
-Failure
-⇒
-Domain Change
-∨
-Loss of Focus
+Failure ⇒ Domain Change ∨ Loss of Focus
+
 4. Where we can go next
 We now have:
 
 a formal scaffold for KAD
 
-a mathematical equivalence: failure ⇔ misalignment 
->
-𝜃
+a mathematical equivalence: failure ⇔ misalignment > 𝜃
 
 a hybrid proof of the Dual Failure Law via decomposition
 
@@ -1109,36 +1062,16 @@ Next, we can:
 
 Define explicit differential dynamics, e.g.
 
-𝑑
-𝑑
-𝑡
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
+𝑑 𝑑𝑡 Δ (𝐷𝑡,𝐴𝑡)
+
 and prove conditions for anticipatory adaptation.
 
 Formalize Domain Blindness using overlapping visibility sets 
-𝑉
-(
-𝐷
-)
+𝑉 ( 𝐷 )
 .
 
 Build a Markov‑style model of domain transitions:
 
-𝑃
-(
-𝐷
-𝑡
-+
-1
-∣
-𝐷
-𝑡
-)
+𝑃 ( 𝐷 𝑡 + 1 ∣ 𝐷 𝑡 )
+
 Construct a full theorem list and prove each one in this hybrid style.
