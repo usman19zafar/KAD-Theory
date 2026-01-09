@@ -1,6 +1,7 @@
-1. Formal scaffold for KAD theory
-We define the core objects.
 
+1. Formal scaffold for KAD theory
+
+We define the core objects.
 Domains:
 
 Let
