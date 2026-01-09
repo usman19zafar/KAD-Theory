@@ -110,19 +110,19 @@ where
 
 (We’ll use this in the hybrid proof.)
 
+
 1.3 Perception and visibility
 Define a perception function:
 
 𝑃 : 𝐴 × 𝐷 → 𝑉
 
 where 
-𝑉
- is the set of all possible perceived “views” or perceptual states.
+𝑉 is the set of all possible perceived “views” or perceptual states.
 
 For a given agent 
 𝐴
 𝑡
- in domain 
+in domain 
 𝐷
 𝑡
 , the perception is
@@ -138,6 +138,7 @@ For a given agent
 𝐷
 𝑡
 )
+
 Define data visibility as a subset of world state that becomes accessible:
 
 𝑉
