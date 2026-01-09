@@ -43,26 +43,25 @@ Define a domain mapping:
 𝑇
 →
 𝐷
+
 Given a world state 
+
 𝑤
 ∈
 𝑊
- at “time” 
+
+at “time” 
+
 𝑡
 ∈
 𝑇
+
 , the active domain is
 
-𝐷
-𝑡
-=
-𝐷
-(
-𝑤
-,
-𝑡
-)
+𝐷𝑡 = 𝐷 ( 𝑤 , 𝑡 )
+
 If you want to avoid explicit time, you can simply write 
+
 𝐷
 (
 𝑤
@@ -74,6 +73,7 @@ If you want to avoid explicit time, you can simply write
 𝑤
 2
  as “before/after” without explicit time.
+
 
 1.2 Agent state and focus
 Let an agent have an internal state:
