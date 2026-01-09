@@ -50,7 +50,7 @@ stored
 modified
 
 deleted
-
+******************************************************************************************************************************************************************
 Business analogy: “The river and the bucket”
 The river flows continuously — no start, no end.
 
