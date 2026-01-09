@@ -18,11 +18,14 @@ The domain changed, but the agent did not.
 **************************************************************************************************************************************************************************************
 KAD Theory provides the first unified explanation for:
 
-why information is everywhere
-why data is not
+why information is everywhere & why data is not
+
 why perception is selective
+
 why failure is universal
+
 why alignment is everything
+
 This theory introduces domain as the fundamental unit of perception, visibility, and performance.
 
 **************************************************************************************************************************************************************************************
