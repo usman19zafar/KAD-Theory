@@ -1,3 +1,9 @@
+Potential of DATA =  Reality
+
+“Reality is continuous, but data is discrete.
+The potential for data has no beginning or end, but actual data always does.”
+
+
 The precise breakdown
 
 1. Reality has no start or end.
