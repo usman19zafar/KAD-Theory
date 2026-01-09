@@ -104,42 +104,17 @@ Define a focus function:
 }
 where
 
-𝐹
-(
-𝐴
-𝑡
-,
-𝐷
-𝑡
-)
-=
-1
- means: the agent is attending to / tracking the current domain.
+𝐹 (𝐴𝑡 , 𝐷𝑡 ) = 1 --> means: the agent is attending to / tracking the current domain.
 
-𝐹
-(
-𝐴
-𝑡
-,
-𝐷
-𝑡
-)
-=
-0
- means: the agent has lost focus on this domain.
+𝐹 (𝐴𝑡 , 𝐷𝑡 ) = 0 -->  means: the agent has lost focus on this domain.
 
 (We’ll use this in the hybrid proof.)
 
 1.3 Perception and visibility
 Define a perception function:
 
-𝑃
-:
-𝐴
-×
-𝐷
-→
-𝑉
+𝑃 : 𝐴 × 𝐷 → 𝑉
+
 where 
 𝑉
  is the set of all possible perceived “views” or perceptual states.
