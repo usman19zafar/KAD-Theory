@@ -1,5 +1,10 @@
 In Normal terms: Information is derived from utility of Data. In author's perceprtion it is bit different! 
 
+Author orginial Words:
+
+"Data (as information in the world) exists everywhere, all the time.
+We only choose when to start collecting it. no i am saying data collector can not realize its existance until he /she leaves his/her last domain and enter a new one. just thingk about a recyle product what is starting and end life of it?"
+
 
 One‑Word Start: Ubiquity
 
