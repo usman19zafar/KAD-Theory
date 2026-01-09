@@ -606,143 +606,40 @@ If focus is lost, alignment is bad:
 
 If focus is present, alignment depends on how well the agent tracks domain changes.
 
-3.2 Decomposition of misalignment over time
-Consider two instants 
-𝑡
-0
- and 
-𝑡
-1
-, with 
-𝑡
-1
->
-𝑡
-0
-.
+3.2 Decomposition of misalignment over time Consider two instants 
 
-At 
-𝑡
-0
-, suppose system is successful:
+𝑡0 and 𝑡1, with
 
-Δ
-(
-𝐷
-𝑡
-0
-,
-𝐴
-𝑡
-0
-)
-≤
-𝜃
-At 
-𝑡
-1
+𝑡1 > 𝑡0. At 𝑡0, suppose system is successful:
+
+Δ (𝐷𝑡0 , 𝐴𝑡0) ≤ 𝜃 At 𝑡1
+
 , suppose system fails:
 
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-1
-)
->
-𝜃
+Δ (𝐷𝑡1 , 𝐴𝑡1) > 𝜃
+
 We want to show that this failure can be attributed to:
 
 domain change 
-𝐷
-𝑡
-0
-→
-𝐷
-𝑡
-1
-, or
+𝐷𝑡0 → 𝐷𝑡1, or
 
 loss of focus 
-𝐹
-(
-𝐴
-𝑡
-1
-,
-𝐷
-𝑡
-1
-)
-=
-0
-, or both.
+𝐹 (𝐴𝑡1 , 𝐷𝑡1) = 0, or both.
 
 3.3 The decomposition
 Define the alignment difference between the two instants:
 
-Δ
-01
-:
-=
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-1
-)
-−
-Δ
-(
-𝐷
-𝑡
-0
-,
-𝐴
-𝑡
-0
-)
+Δ 01 : = Δ
+( 𝐷𝑡1 , 𝐴𝑡1) − Δ(𝐷𝑡0, 𝐴𝑡0)
+
 By assumption:
 
-Δ
-(
-𝐷
-𝑡
-0
-,
-𝐴
-𝑡
-0
-)
-≤
-𝜃
+Δ (𝐷𝑡0 , 𝐴𝑡0) ≤ 𝜃
 
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-1
-)
->
-𝜃
+Δ(𝐷𝑡1 ,𝐴𝑡1) > 𝜃
 
-So 
-Δ
-01
->
-0
+So Δ01 > 0
+
 ; misalignment increased.
 
 We now decompose the cause of this increase into two components:
@@ -751,77 +648,19 @@ Domain change component
 
 Consider a hypothetical agent that perfectly tracks the domain (no internal drift, full focus). Define
 
-Δ
-domain
-:
-=
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-0
-)
-−
-Δ
-(
-𝐷
-𝑡
-0
-,
-𝐴
-𝑡
-0
-)
+Δ domain : =Δ(𝐷𝑡1 , 𝐴𝑡0) − Δ (𝐷𝑡0 , 𝐴𝑡0)
 This measures how much misalignment would change purely because the domain changed from 
-𝐷
-𝑡
-0
- to 
-𝐷
-𝑡
-1
-, holding agent state fixed.
+
+𝐷𝑡0 to 𝐷𝑡1, holding agent state fixed.
 
 Agent/focus change component
 
 Consider the actual agent at 
-𝑡
-1
- versus the hypothetical perfectly focused agent at 
-𝐴
-𝑡
-0
-. Define
 
-Δ
-agent
-:
-=
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-1
-)
-−
-Δ
-(
-𝐷
-𝑡
-1
-,
-𝐴
-𝑡
-0
-)
+𝑡 1 versus the hypothetical perfectly focused agent at 𝐴𝑡0 . 
+
+Define Δagent : = Δ ( 𝐷𝑡1 , 𝐴𝑡1) − Δ(𝐷𝑡1 , 𝐴𝑡0)
+
 This measures how much misalignment is added by the agent’s internal change and/or loss of focus, given the same domain 𝐷𝑡1 .
 
 Now observe:
