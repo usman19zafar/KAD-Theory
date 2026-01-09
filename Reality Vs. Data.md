@@ -45,6 +45,15 @@ modified
 
 deleted
 
+Business analogy: “The river and the bucket”
+The river flows continuously — no start, no end.
+
+But the moment you scoop water into a bucket, that water has a beginning.
+
+When you pour it out or it evaporates, it has an end.
+
+Reality = river
+Data = bucket of captured water
 corrupted
 
 overwritten
