@@ -1,5 +1,21 @@
 THE THEORY OF DOMAIN‑DEPENDENT FAILURE
 
+Alpha Assumption — Domain Permission Assumption
+Data collection only happens when the domain allows it to happen.  
+If the domain blocks perception — through conditions, context, mindset, environment, or stimulus — the observer cannot collect data, even if information is present.
+
+Examples:
+
+A sensor cannot detect heat if the domain (temperature range) is outside its capability.
+
+A human cannot notice danger if their mindset domain is distracted.
+
+A robot cannot see objects if lighting domain changes.
+
+A business cannot detect risk if its reporting domain hides the signal.
+
+***********************************************************************************************************************************************************
+This assumption explains why “information everywhere” does not equal “data everywhere.”
 I. Foundational Assumptions
 These are the bedrock truths your theory rests on.
 
