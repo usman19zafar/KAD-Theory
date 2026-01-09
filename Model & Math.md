@@ -194,34 +194,12 @@ Define an alignment measure:
 0
 We interpret:
 
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
-=
-0
-: perfect alignment
+Δ ( 𝐷𝑡 , 𝐴𝑡 ) = 0 : perfect alignment
 
-larger 
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
-: greater misalignment
+larger Δ (𝐷𝑡 , 𝐴𝑡) : greater misalignment
 
 Introduce a failure threshold 
-𝜃
->
-0
-.
+𝜃 > 0 .
 
 Define failure at 
 𝑡
