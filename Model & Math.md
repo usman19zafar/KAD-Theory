@@ -117,46 +117,21 @@ Define a perception function:
 𝑃 : 𝐴 × 𝐷 → 𝑉
 
 where 
+
 𝑉 is the set of all possible perceived “views” or perceptual states.
 
-For a given agent 
-𝐴
-𝑡
-in domain 
-𝐷
-𝑡
-, the perception is
+For a given agent 𝐴𝑡 in domain 𝐷𝑡, the perception is
 
-𝑣
-𝑡
-=
-𝑃
-(
-𝐴
-𝑡
-,
-𝐷
-𝑡
-)
+𝑣𝑡 = 𝑃 (𝐴𝑡 , 𝐷𝑡)
 
 Define data visibility as a subset of world state that becomes accessible:
 
-𝑉
-:
-𝐷
-→
-𝑃
-(
-𝑊
-)
+𝑉 : 𝐷 → 𝑃 ( 𝑊 )
+
 where 
-𝑃
-(
-𝑊
-)
- is the power set of 
-𝑊
-.
+
+𝑃 ( 𝑊 )  is the power set of 𝑊.
+
 For 
 𝐷
 𝑡
