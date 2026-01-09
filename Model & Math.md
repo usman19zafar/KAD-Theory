@@ -263,27 +263,13 @@ There exists a function
 }
 such that:
 
-𝑆
-(
-𝑥
-)
-=
-1
- means “success”
+𝑆 ( 𝑥 ) = 1  means “success”
 
-𝑆
-(
-𝑥
-)
-=
-0
- means “failure”
+𝑆 ( 𝑥 ) = 0  means “failure”
 
 and 
-𝑆
- is non‑increasing in 
-𝑥
-.
+
+𝑆  is non‑increasing in 𝑥.
 
 Interpretation: as misalignment increases, you cannot go from failure back to success without reducing misalignment.
 
