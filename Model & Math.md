@@ -195,65 +195,29 @@ Fail
 ,
 𝐴
 𝑡
-)
->
-𝜃
+) > 𝜃
+
+
 This is the core formalization of your signature:
 failure is domain misalignment.
 
 2. Mathematical theorem: failure is equivalent to misalignment beyond threshold
 Theorem 1 (Failure–Misalignment Equivalence)
+
 Assume:
 
-For every world state 
-𝑤
- and index 
-𝑡
-, there is a domain 
-𝐷
-𝑡
-=
-𝐷
-(
-𝑤
-,
-𝑡
-)
-.
+1, For every world state 𝑤 and index 𝑡 , there is a domain 
+𝐷𝑡 = 𝐷 (𝑤,𝑡).
 
-For every index 
-𝑡
-, there is an agent state 
-𝐴
-𝑡
-=
-𝐴
-(
-𝑡
-)
-.
+For every index 𝑡 , there is an agent state 
+𝐴𝑡= 𝐴(𝑡).
 
 There exists an alignment function 
-Δ
-:
-𝐷
-×
-𝐴
-→
-𝑅
-≥
-0
- and a fixed threshold 
-𝜃
->
-0
-.
+
+Δ : 𝐷 × 𝐴 → 𝑅 ≥ 0 and a fixed threshold  𝜃 > 0 .
 
 System success at 
-𝑡
- is defined as “alignment is sufficient for intended performance,” and failure at 
-𝑡
- is defined as violation of success.
+𝑡 is defined as “alignment is sufficient for intended performance,” and failure at 𝑡  is defined as violation of success.
 
 Then the following two statements are equivalent:
 
