@@ -86,11 +86,9 @@ Let an agent have an internal state:
 ,
 𝐴
 𝑡
-=
-𝐴
-(
-𝑡
-)
+= 𝐴 ( 𝑡 )
+
+
 Define a focus function:
 
 𝐹
