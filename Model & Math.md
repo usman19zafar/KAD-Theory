@@ -137,24 +137,13 @@ For
 𝑡
 , the visible region of reality is:
 
-𝑉
-(
-𝐷
-𝑡
-)
-⊆
-𝑊
+𝑉 (𝐷𝑡 ) ⊆ 𝑊
 This formalizes:
 
 information exists everywhere in 
-𝑊
-
-data is the portion of 
-𝑊
- that is visible and captured under 
-𝐷
-𝑡
-.
+𝑊 data is the portion of 
+𝑊 that is visible and captured under 
+𝐷𝑡.
 
 1.4 Alignment and misalignment
 Define an alignment measure:
@@ -512,97 +501,23 @@ We’ll formalize and prove that under reasonable assumptions.
 3.1 Additional structure
 We already defined:
 
-𝐷
-𝑡
-: active domain
+𝐷𝑡 : active domain
 
-𝐴
-𝑡
-: agent state
+𝐴𝑡 : agent state
 
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
-: misalignment
+Δ(𝐷𝑡 , 𝐴𝑡) : misalignment
 
-𝐹
-(
-𝐴
-𝑡
-,
-𝐷
-𝑡
-)
-∈
-{
-0
-,
-1
-}
-: focus
+𝐹(𝐴𝑡,𝐷𝑡) ∈ {0,1} : focus
 
 Now define dynamic alignment as depending on both:
 
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
-=
-𝐺
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-,
-𝐹
-(
-𝐴
-𝑡
-,
-𝐷
-𝑡
-)
-)
-where 
-𝐺
- satisfies:
+Δ (𝐷𝑡 , 𝐴𝑡 ) = 𝐺 (𝐷𝑡 , 𝐴𝑡 , 𝐹 ( 𝐴𝑡 , 𝐷𝑡))
+
+where 𝐺 satisfies:
 
 If focus is lost, alignment is bad:
 
-𝐹
-(
-𝐴
-𝑡
-,
-𝐷
-𝑡
-)
-=
-0
-  
-⟹
-  
-Δ
-(
-𝐷
-𝑡
-,
-𝐴
-𝑡
-)
->
-𝜃
+𝐹 (𝐴𝑡 , 𝐷𝑡 ) = 0 ⟹ Δ (𝐷𝑡, 𝐴𝑡) > 𝜃
 
 If focus is present, alignment depends on how well the agent tracks domain changes.
 
