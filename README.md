@@ -1,19 +1,23 @@
 KAD Theory — The Theory of Domain
+
 Kinetic Alignment of Domains
 **************************************************************************************************************************************************************************************
 
 Signature Definition
+
 Perception is domain‑dependent; failure is domain misalignment.
 KAD Theory explains why humans, machines, organizations, and AI systems succeed or fail — not because of data, but because of the domain they are operating within.
 
 **************************************************************************************************************************************************************************************
 Why This Theory Exists
+
 Modern systems fail in unpredictable ways. AI models collapse in new environments. Humans overlook obvious risks. Organizations break during change. Sensors malfunction under new conditions.
 All these failures share one root cause:
 The domain changed, but the agent did not.
 
 **************************************************************************************************************************************************************************************
 KAD Theory provides the first unified explanation for:
+
 why information is everywhere
 why data is not
 why perception is selective
@@ -23,12 +27,14 @@ This theory introduces domain as the fundamental unit of perception, visibility,
 
 **************************************************************************************************************************************************************************************
 The Core Idea
+
 KAD Theory states that all perception, data visibility, and agent performance depend entirely on the domain the agent is operating within. 
 A domain is the set of conditions or stimuli that shape what an observer can perceive. 
 Domains shift continuously, and failure occurs when the agent and the domain fall out of alignment.
 
 **************************************************************************************************************************************************************************************
 The Three Pillars of KAD
+
 1. Domain Permission
 Data appears only when the domain allows it.
 
@@ -133,3 +139,6 @@ Human time is just a tool, not a boundary
 Understanding is the real axis of expansion
 
 **************************************************************************************************************************************************************************************
+
+Author
+Created by Usman Zafar — for my children, so they know their father built something real and the world remembers that Usman Zafar ever existed.
