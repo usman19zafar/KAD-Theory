@@ -1,4 +1,3 @@
-
 1. Formal scaffold for KAD theory
 
 We define the core objects.
@@ -25,7 +24,7 @@ Time (optional human coordinate):
 Let
 
 𝑇 be a time index set (e.g. 𝑅 or 𝑍) — but KAD is not fundamentally dependent on it.
-
+*****************************************************************************************************************************************************************
 1.1 Domain as a function of world (and optionally time)
 Define a domain mapping:
 
@@ -43,6 +42,8 @@ If you want to avoid explicit time, you can simply write
 
 𝐷 (𝑤) and treat different world states 𝑤1, 𝑤2 as “before/after” without explicit time.
 
+
+*****************************************************************************************************************************************************************
 1.2 Agent state and focus
 Let an agent have an internal state:
 
@@ -60,6 +61,7 @@ where
 (We’ll use this in the hybrid proof.)
 
 
+*****************************************************************************************************************************************************************
 1.3 Perception and visibility
 Define a perception function:
 
@@ -92,6 +94,7 @@ information exists everywhere in
 𝑊 that is visible and captured under 
 𝐷𝑡.
 
+*****************************************************************************************************************************************************************
 1.4 Alignment and misalignment
 Define an alignment measure:
 
@@ -110,10 +113,10 @@ Define failure at
 
 Fail(𝑡) ⟺ Δ(𝐷𝑡 , 𝐴𝑡) > 𝜃
 
-
-This is the core formalization of your signature:
 failure is domain misalignment.
 
+
+*****************************************************************************************************************************************************************
 2. Mathematical theorem: failure is equivalent to misalignment beyond threshold
 Theorem 1 (Failure–Misalignment Equivalence)
 
@@ -140,7 +143,7 @@ The system fails at time
 Proof (hybrid: logical + mathematical)
 Step 1: Define success in terms of alignment.
 
-You define KAD’s core claim as:
+KAD’s core claim as:
 
 When the agent and domain are sufficiently aligned, the system performs as intended (success).
 
@@ -223,6 +226,7 @@ This proves the equivalence.
 Interpretation:  
 Once you define performance as a monotone function of domain–agent alignment, failure being “misalignment beyond a threshold” is not just a slogan — it is mathematically forced.
 
+*****************************************************************************************************************************************************************
 3. Hybrid proof for the Dual Failure Law
 Your Dual Failure Law says:
 
@@ -234,6 +238,7 @@ loss of domain focus.
 
 We’ll formalize and prove that under reasonable assumptions.
 
+*****************************************************************************************************************************************************************
 3.1 Additional structure
 We already defined:
 
@@ -257,6 +262,7 @@ If focus is lost, alignment is bad:
 
 If focus is present, alignment depends on how well the agent tracks domain changes.
 
+*****************************************************************************************************************************************************************
 3.2 Decomposition of misalignment over time Consider two instants 
 
 𝑡0 and 𝑡1, with
@@ -277,6 +283,7 @@ domain change
 loss of focus 
 𝐹 (𝐴𝑡1 , 𝐷𝑡1) = 0, or both.
 
+*****************************************************************************************************************************************************************
 3.3 The decomposition
 Define the alignment difference between the two instants:
 
@@ -330,6 +337,7 @@ a domain term, and
 
 an agent/focus term.
 
+*****************************************************************************************************************************************************************
 3.4 Linking agent/focus term to loss of focus
 
 Now use the focus function 𝐹.
@@ -381,6 +389,7 @@ This is your Dual Failure Law in formal clothes:
 
 Failure ⇒ Domain Change ∨ Loss of Focus
 
+*****************************************************************************************************************************************************************
 4. Where we can go next
 We now have:
 
