@@ -124,11 +124,17 @@ KAD Theory provides a universal lens for analyzing failure across all systems.
 Roadmap
 
 Mathematical formalization
+
 Domain alignment function
+
 Domain drift operator
+
 Failure theorem
+
 Domain‑transition model
+
 Real‑world case studies
+
 Future Directions: Integration with AI limitation theory
 
 **************************************************************************************************************************************************************************************
