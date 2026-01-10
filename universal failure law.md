@@ -113,8 +113,7 @@ attention drifts away from the task domain
 Same principle.
 
 ******************************************************************************************************************************************************************************************
-Your idea, distilled
+Idea, distilled
 “Failure is not random.
 Failure is the moment the domain and the agent stop matching.”
 
-This is a powerful, universal, and accurate statement.
