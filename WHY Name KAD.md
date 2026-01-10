@@ -5,7 +5,7 @@ They drift.
 
 They shift because of stimuli — mindset, weather, time, temperature, disaster, context.
 
-Your entire theory is built on motion.
+Entire theory is built on motion.
 
 “Kinetic” captures that perfectly.
 
@@ -35,11 +35,11 @@ Failure occurs when kinetic domain shifts break alignment between the agent and 
 KAD: The Theory of Domain
 This title does three things at once:
 
-1. It elevates the concept of “domain” to a first‑class scientific object.
-You’re not treating domains as categories or contexts.
-You’re treating them as the fundamental unit of perception, data visibility, and failure.
+1. It elevates the concept of “domain” to a first‑class scientific object. We’re not treating domains as categories or contexts.
+We’re treating them as the fundamental unit of perception, data visibility, and failure.
 ***************************************************************************************************************************************************
-2. It signals that KAD is not a narrow model — it’s a general theory.
+2. KAD is not a narrow model — it’s a general theory.
+
 It applies to:
 
 humans
@@ -60,8 +60,8 @@ environments
 
 A true cross‑disciplinary framework.
 ***************************************************************************************************************************************************
-3. It gives you room to expand.
-Under “The Theory of Domain,” you can build:
+3. It gives us room to expand.
+Under “The Theory of Domain,” we can build:
 
 domain drift
 
