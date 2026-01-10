@@ -1,6 +1,6 @@
 In Normal terms: Information is derived from utility of Data. In author's perceprtion it is bit different! 
 
-Author orginial Words:
+Author's Starting Comment:
 
 "Data (as information in the world) exists everywhere, all the time.
 We only choose when to start collecting it. no i am saying data collector can not realize its existance until he /she leaves his/her last domain and enter a new one. just thingk about a recyle product what is starting and end life of it?"
@@ -52,7 +52,6 @@ Or even cleaner:
 Information is everywhere.
 Data begins where we choose to observe.
 
-This captures your idea perfectly.
 ************************************************************************************************************************
 Business analogy: “The store floor”
 Customers are always moving
@@ -70,7 +69,8 @@ install cameras, track POS transactions, run foot‑traffic sensors, measure dwe
 The world is full of information.
 Data is the slice we choose to capture.
 ************************************************************************************************************************
-Your idea, refined into a precise statement
+Idea refined
+
 “Information exists everywhere at all times, but data only begins when we choose to observe and record a portion of that information.”
 
 This is accurate, clean, and philosophically strong.
