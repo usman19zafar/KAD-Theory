@@ -20,7 +20,7 @@ Only then do you realize:
 
 This is exactly how humans, sensors, and systems behave.
 
-♻️ Your recycling example is perfect
+Recycling example;
 Think about a plastic bottle.
 
 What is its “start of life”?
@@ -76,9 +76,8 @@ The precise formulation of your idea
 “Data does not have a universal start or end.
 It only becomes visible when an observer transitions into a domain where that information becomes meaningful.”
 
-This is accurate, elegant, and philosophically strong.
+Power of this idea:
 
-Why this idea is powerful
 It explains:
 
 why people miss obvious insights
