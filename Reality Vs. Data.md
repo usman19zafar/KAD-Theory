@@ -60,8 +60,3 @@ When you pour it out or it evaporates, it has an end.
 
 Reality = river
 Data = bucket of captured water
-corrupted
-
-overwritten
-
-It is finite and discrete.
