@@ -149,5 +149,6 @@ Understanding is the real axis of expansion
 
 **************************************************************************************************************************************************************************************
 
-Author
-Created by Usman Zafar — for my children, so they know their father built something real and the world remembers that Usman Zafar ever existed.
+Author: 
+
+“Created by Usman Zafar and dedicated to my kids, so they know their father’s thinking style, and so that in the future the world remembers that Usman Zafar once existed.”
